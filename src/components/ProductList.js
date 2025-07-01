@@ -3,8 +3,9 @@ import { useDispatch } from 'react-redux';
 import { addItem } from '../features/cart/cartSlice';
 
 const products = [
-  { id: 1, name: 'Laptop', price: 50000 },
-  { id: 2, name: 'Phone', price: 30000 },
+  { id: 1, name: 'Headphones', price: 2500 },
+  { id: 2, name: 'Smartwatch', price: 4000 },
+  { id: 3, name: 'Bluetooth Speaker', price: 3500 },
 ];
 
 function ProductList() {
@@ -12,7 +13,7 @@ function ProductList() {
 
   return (
     <div>
-      <h2>Products</h2>
+      <h2>Available Gadgets</h2>
       {products.map((p) => (
         <div key={p.id}>
           <h4>{p.name} - Rs. {p.price}</h4>
